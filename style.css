@@ -1,0 +1,67 @@
+
+body{
+  background-color: blueviolet;
+  color: white;
+ 
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+.box {
+  aspect-ratio: 1 / 1;
+  font-size: calc(10px + 4vw);
+  text-align: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  transition: transform 0.2s;
+  border-radius: 10px;
+}
+.box:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.box:active {
+  transform: scale(1.1);
+}
+.box.winner {
+  animation: winner-pulse 0.5s infinite;
+}
+@keyframes winner-pulse {
+  0%, 100% {
+      background-color: yellow;
+  }
+  50% {
+      background-color: orange;
+  }
+}
+.turn-indicator, .scoreboard, .timer, .msg, .history {
+  text-align: center;
+  margin: 10px;
+}
+.msg.hide {
+  display: none;
+}
+
+.btn-reset{
+  border: none;
+  background-color: ;
+  padding: 0.7rem;
+  border-radius: 20px;
+  background-color: lightgreen;
+ 
+  font-weight: 500;
+}
+.btn-replay{
+  border: none;
+  background-color: lightgreen;
+ 
+  font-weight: 500;
+  padding: 0.7rem;
+  border-radius: 20px;
+}

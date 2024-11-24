@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game">
+    <div class="turn-indicator">Turn: X</div>
+    <div class="game-board">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+    </div>
+    <div class="msg hide"></div>
+    <div class="scoreboard">
+        <p>Player X: <span id="score-x">0</span></p>
+        <p>Player O: <span id="score-o">0</span></p>
+    </div>
+    <div class="timer">Time Left: <span id="time-left">10</span>s</div>
+ <div class="row justify-content-center">   <button class="btn-reset">Reset Game</button>
+  <button class="btn-replay  mx-3">Replay Last Game</button>
+</div>
+    <div class="history">
+        <h3>Game History</h3>
+        <ul id="history-list"></ul>
+    </div>
+</div>
+
+<audio id="click-sound" src="click.mp3"></audio>
+<audio id="win-sound" src="win.mp3"></audio>
+<audio id="draw-sound" src="draw.mp3"></audio>
+
+    <script src="app.js"></script>
+</body>
+</html>
